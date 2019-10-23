@@ -1,4 +1,9 @@
-public class Hero {
+public class Hero implements Comparable<Hero>{
+
+    @Override
+    public int compareTo(Hero hero){
+      return this.getName().compareTo(hero.getName());
+    }
 
     // attributs
     private String name;
